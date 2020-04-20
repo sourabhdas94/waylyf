@@ -18,19 +18,19 @@
                             <div class="row register-form">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input type="text" name="name" class="form-control" placeholder="Full Name *" value="" />
+                                        <input type="text" name="name" class="form-control" placeholder="Full Name *" value="" required/>
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" name="state" class="form-control" placeholder="State *" value="" />
+                                        <input type="text" name="state" class="form-control" placeholder="State *" value="" required/>
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" name="city" class="form-control" placeholder="City *" value="" />
+                                        <input type="text" name="city" class="form-control" placeholder="City *" value="" required/>
                                     </div>
                                     <div class="form-group">
-                                        <input type="number" name="pincode" class="form-control"  placeholder="Pincode *" value="" />
+                                        <input type="number" name="pincode" class="form-control"  placeholder="Pincode *" value="" required/>
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" name="addr" class="form-control" placeholder="Locality *" value="" />
+                                        <input type="text" name="addr" class="form-control" placeholder="Locality *" value="" required/>
                                     </div>
                                     <div class="form-group">
                                         <select class="form-control" name="donated">
@@ -52,16 +52,19 @@
                                         </div>
                                     </div>
                                     <div class="form-group">
+                                        <input type="number" class="form-control" id="age" placeholder="Age *" min="18" name="age" required>
+                                    </div>
+                                    <div class="form-group">
                                         <label for="image_upload">Upload your photo :</label>
                                         <input type="file" accept=".jpg,.png" class="form-control-file" id="image_upload" name="image_upload" required>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input type="date" class="form-control" name="dob" placeholder="Date of Birth *" value="" />
+                                        <input type="date" class="form-control" name="dob" placeholder="Date of Birth *" value="" required/>
                                     </div>
                                     <div class="form-group">
-                                        <input type="number" minlength="10" maxlength="10" name="mob" class="form-control" placeholder="Your Phone *" value="" />
+                                        <input type="number" minlength="10" maxlength="10" name="mob" class="form-control" placeholder="Your Phone *" value="" required/>
                                     </div>
                                     <div class="form-group">
                                         <select class="form-control" name="blood_group">
@@ -76,11 +79,11 @@
                                             <option>AB-</option>
                                         </select>
                                     </div>
-                                    {{-- <div class="form-group">
-                                    <input type="number" placeholder="Click the get Location Button *" class="form-control" id="lat" name="lat" step="0.00000000000001" min="0" max="180" required><br>
-                                    <input type="number" placeholder="Click the get Location Button *" class="form-control" id="long" name="long" step="0.0000000000001" min="0" max="180" required>
-                                    </div> --}}
-                                    {{-- <a onclick="getLocation()" class="btn btn-success text-light">Get Location</a><br> --}}
+                                    <div class="form-group">
+                                        <input type="number" placeholder="Click the get Location Button *" class="form-control" id="lat" name="lat" step="0.00000000000000001" min="0" max="180" required><br>
+                                        <input type="number" placeholder="Click the get Location Button *" class="form-control" id="long" name="long" step="0.0000000000000001" min="0" max="180" required>
+                                    </div>
+                                        <a onclick="getLocation()" class="btn btn-success text-light">Get Location</a><br>
                                     <div class="form-group">
                                         <label for="id_proof">Identification proof :</label>
                                         <input type="file" accept=".jpg,.png,.pdf" class="form-control-file" id="id_proof" name="id_proof" required>
@@ -100,4 +103,21 @@
     </div>
 </div>
 
-    @endsection
+<script>
+    var x = document.getElementById("lat");
+    var y = document.getElementById("long");
+    
+    function getLocation() {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+      } else { 
+        x.innerHTML = "Geolocation is not supported by this browser.";
+      }
+    }
+    
+    function showPosition(position) {
+      x.value =  position.coords.latitude;
+      y.value =  position.coords.longitude;
+    }
+</script>
+@endsection

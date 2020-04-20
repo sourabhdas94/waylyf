@@ -8,13 +8,7 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
-/* -------------custom styles------------- */
-.register-left{
-  text-align: center;
-  color: #fff;
-  margin-top: 4%;
-}
-/* ----------------- End of custom styles-------------- */
+
 
 body {
     background: #fff;
@@ -1563,3 +1557,12 @@ body {
     color: #495057;
    
 }
+
+/* -------------custom styles------------- */
+.register-left{
+  text-align: center;
+  color: #fff;
+  margin-top: 4%;
+}
+
+/* ----------------- End of custom styles-------------- */

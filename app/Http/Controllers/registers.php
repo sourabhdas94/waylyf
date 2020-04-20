@@ -18,9 +18,12 @@ class registers extends Controller
         $post -> addr = $req->addr;
         $post -> donated = $req->donated;
         $post -> gender = $req->gender;
+        $post -> age = $req->age;
         $post -> pincode = $req->pincode;
         $post -> dob = $req->dob;
         $post -> mob = $req->mob;
+        $post -> lat = $req->lat;
+        $post -> long = $req->long;
         $post -> blood_group = $req->blood_group;
         //user photo
         if($req->hasfile('image_upload')){
@@ -47,6 +50,6 @@ class registers extends Controller
         }
      
         $post -> save();
-        return view('register');
+        return redirect('/register');
     }
 }

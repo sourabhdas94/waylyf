@@ -22,7 +22,10 @@ class Registers extends Migration
             $table -> string('addr');
             $table -> string('donated');
             $table -> string('gender');
+            $table -> float('age');
             $table -> float('pincode', 8);
+            $table -> float('lat', 20);
+            $table -> float('long', 20);
             $table->date('dob'); 
             $table -> float('mob', 12);
             $table -> string('blood_group');

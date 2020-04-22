@@ -35,8 +35,11 @@ class searchs extends Controller
             }
         }
 
-        return view('/search', ['data' => $datapass]);    
-        // return redirect('/search')->with('data', $datapass);
+        return view('/donorlist', ['data' => $datapass]);
+        // return view('/search', ['data' => $datapass]);    
+        // return redirect('/donorlist')->with(['data' => $datapass]);
+        // return redirect('/donorlist', ['data' => $datapass]);
+        // return redirect()->route( 'donorlist' )->with( [ 'data' => $datapass ] );
         
         
          

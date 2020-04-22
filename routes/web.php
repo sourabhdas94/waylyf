@@ -22,6 +22,7 @@ Route::view('/beforedonation','beforeDonation');
 Route::view('/whydonation','whyDonation');
 Route::view('/search','search');
 Route::view('/register','register');
+Route::view('/donorlist','donorlist');
 
 Route::post('/registercontroller',"registers@submit");
 Route::post('/searchcontroller',"searchs@submit");

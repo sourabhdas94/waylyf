@@ -14,8 +14,8 @@
       <div class="intro-info">
         <h2>Donate Red.<br>Save Lives<br>Be a Hero!</h2>
         <div>
-          <a href="/waylyf/sample/public/register" class="btn-get-started scrollto">Register as a Donor</a>
-          <a href="/waylyf/sample/public/search" class="btn-services scrollto"> Search for Donor</a>
+          <a href="/register" class="btn-get-started scrollto">Register as a Donor</a>
+          <a href="/search" class="btn-services scrollto"> Search for Donor</a>
         </div>
       </div>
 
@@ -117,14 +117,14 @@
           <div class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp" data-wow-duration="1.4s">
             <div class="box">
               <div class="icon"><i class="ion-ios-analytics-outline" style="color: #ff689b;"></i></div>
-              <h4 class="title"><a href="/work/waylyf/V2/public/whydonation">Why you should Donate Blood</a></h4>
+              <h4 class="title"><a href="/work/waylyf/V3/public/whydonation">Why you should Donate Blood</a></h4>
               <p class="description">Donating Blood is also a way to make youself a hero in real life.</p>
             </div>
           </div>
           <div class="col-md-6 col-lg-5 wow bounceInUp" data-wow-duration="1.4s">
             <div class="box">
               <div class="icon"><i class="ion-ios-bookmarks-outline" style="color: #e9bf06;"></i></div>
-              <h4 class="title"><a href="/work/waylyf/V2/public/myth">Myth vs Facts</a></h4>
+              <h4 class="title"><a href="/work/waylyf/V3/public/myth">Myth vs Facts</a></h4>
               <p class="description">Many myth are prevailing in the society which stops people from donating without even knowing the real facts.
               </p>
             </div>
@@ -133,14 +133,14 @@
           <div class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
             <div class="box">
               <div class="icon"><i class="ion-ios-paper-outline" style="color: #3fcdc7;"></i></div>
-              <h4 class="title"><a href="/work/waylyf/V2/public/beforedonation">Precaution before donating Blood</a></h4>
+              <h4 class="title"><a href="/work/waylyf/V3/public/beforedonation">Precaution before donating Blood</a></h4>
               <p class="description">Some of the points must be kept in mind before donating blood.</p>
             </div>
           </div>
           <div class="col-md-6 col-lg-5 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
             <div class="box">
               <div class="icon"><i class="ion-ios-speedometer-outline" style="color:#41cf2e;"></i></div>
-              <h4 class="title"><a href="/work/waylyf/V2/public/afterdonating">What After Donating</a></h4>
+              <h4 class="title"><a href="/work/waylyf/V3/public/afterdonating">What After Donating</a></h4>
               <p class="description">After donating, one must keep in mind some important points.</p>
             </div>
           </div>
@@ -687,10 +687,10 @@
               <li><a href="#">Home</a></li>
               <li><a href="">Services</a></li>
               <li><a href="">Waylyf Media</a></li>
-              <li><a href="/work/waylyf/V2/public/search">Search</a></li>
-              <li><a href="/work/waylyf/V2/public/register">Donor</a></li>
+              <li><a href="/work/waylyf/V3/public/search">Search</a></li>
+              <li><a href="/work/waylyf/V3/public/register">Donor</a></li>
               <li><a href="#contact">Contact Us</a></li>
-              <li><a href="/work/waylyf/V2/public/about">About Us</a></li>
+              <li><a href="/work/waylyf/V3/public/about">About Us</a></li>
             </ul>
           </div>
 
